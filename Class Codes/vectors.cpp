@@ -1,7 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void display_vector(vector<int> &vec){ //if we will write "vector<int> vec" it will create a copy of the vector and the vector can be very large in size and a lot of memory will get wasted so just passed the vector by reference
+
+template<class X_TYPE> // X_TYPE is the name of variable now we can use the template in display function and can use it to print vector of any data type
+
+void display_vector(vector<X_TYPE> &vec){ //if we will write "vector<int> vec" it will create a copy of the vector and the vector can be very large in size and a lot of memory will get wasted so just passed the vector by reference
     // for(int i = 0; i < vec.size(); i++){
     //     cout << vec[i] << " ";
     // }

@@ -23,6 +23,12 @@ int main(){
     
     Example ob;
 
+    //Pointer to a pointer
+    int** a_ptpt = &a_pt;
+
+    cout << "Value of a : " << **a_ptpt << endl; // or *(*a_ptpt) // *a_ptpt will give the value  of a_pt i.e the address of a , so again using * will give the value present at that address i.e the value of a
+    
+
     cout << "a: " << a << " b: " << b << endl;
     cout << "a_pt: " << *a_pt << " b_pt: " << *b_pt << endl;
 
